@@ -2,7 +2,9 @@
   "name": "graphiti",
   "version": "1.0.0",
   "description": "Just a simple graph visualizer!",
-  "scripts": {},
+  "scripts": {
+    "dev": "live-server --proxy=/app:http://127.0.0.1:8080"
+  },
   "keywords": [
     "grpah",
     "visualizer"
@@ -13,6 +15,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "live-server": "^1.2.1",
     "prettier": "^2.3.2"
   }
 }
