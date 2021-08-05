@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Just a simple graph visualizer!",
   "scripts": {
-    "dev": "live-server --proxy=/app:http://127.0.0.1:8080"
+    "dev": "concurrently \"live-server --proxy=/app:http://127.0.0.1:8080\" \"sass --watch styles/scss:styles/css\""
   },
   "keywords": [
     "grpah",
@@ -12,10 +12,12 @@
   "author": "BijanProgrammer",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^6.2.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "live-server": "^1.2.1",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "sass": "^1.37.5"
   }
 }
