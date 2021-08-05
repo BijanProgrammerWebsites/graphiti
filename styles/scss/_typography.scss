@@ -1,0 +1,9 @@
+@mixin generate($name, $size, $weight) {
+    --font-size-#{$name}: #{$size};
+    --font-weight-#{$name}: #{$weight};
+}
+
+@mixin apply($name) {
+    font-size: var(--font-size-#{$name});
+    font-weight: var(--font-weight-#{$name});
+}

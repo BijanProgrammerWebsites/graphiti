@@ -1,0 +1,31 @@
+@use "./typography";
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--density--normal);
+
+        h3 {
+        }
+
+        button {
+            margin-inline-start: auto;
+        }
+
+        a,
+        button {
+            display: flex;
+
+            @include typography.apply('h5');
+        }
+    }
+
+    main {
+        flex: 1;
+    }
+}
