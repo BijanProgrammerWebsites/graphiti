@@ -87,15 +87,3 @@
     --rounded-corner-border-radius--small: 0.5rem;
     --rounded-corner-border-radius--large: 1rem;
 }
-
-body {
-    &:not(.dark) {
-        --body-background: var(--color-gray-98);
-        --body-foreground: var(--color-gray-10);
-    }
-
-    &.dark {
-        --body-background: var(--color-gray-10);
-        --body-foreground: var(--color-gray-98);
-    }
-}

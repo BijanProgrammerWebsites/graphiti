@@ -1,6 +1,15 @@
 /**************** SHAPES **************/
 /************** VARIABLES *************/
 /*************** BUTTONS **************/
+body:not(.dark) {
+  --body-background: var(--color-gray-98);
+  --body-foreground: var(--color-gray-10);
+}
+body.dark {
+  --body-background: var(--color-gray-10);
+  --body-foreground: var(--color-gray-98);
+}
+
 :root {
   --color-primary--fade: hsl(221, 100%, 93%);
   --color-primary--idle: hsl(220, 100%, 55%);
@@ -98,18 +107,10 @@
   --rounded-corner-border-radius--large: 1rem;
 }
 
-body:not(.dark) {
-  --body-background: var(--color-gray-98);
-  --body-foreground: var(--color-gray-10);
-}
-body.dark {
-  --body-background: var(--color-gray-10);
-  --body-foreground: var(--color-gray-98);
-}
-
 *,
 *::before,
 *::after {
+  color: inherit;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -126,8 +127,9 @@ body {
   background-color: var(--body-background);
   color: var(--body-foreground);
   max-width: 120rem;
+  width: 100%;
   min-height: 100vh;
-  margin-inline: auto;
+  margin: auto;
 }
 
 h1 {
@@ -161,7 +163,8 @@ h6 {
 }
 
 button {
-  all: initial;
+  all: unset;
+  cursor: pointer;
 }
 
 svg {

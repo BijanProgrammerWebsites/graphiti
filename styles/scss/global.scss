@@ -1,5 +1,6 @@
 @use "./colors";
 @use "./components";
+@use "./theme-management";
 @use "./typography";
 @use "./utils";
 @use "./variables";
@@ -7,6 +8,8 @@
 *,
 *::before,
 *::after {
+    color: inherit;
+
     box-sizing: border-box;
 
     margin: 0;
@@ -26,9 +29,10 @@ body {
     color: var(--body-foreground);
 
     max-width: 120rem;
+    width: 100%;
     min-height: 100vh;
 
-    margin-inline: auto;
+    margin: auto;
 }
 
 @for $i from 1 to 6 + 1 {
@@ -38,7 +42,9 @@ body {
 }
 
 button {
-    all: initial;
+    all: unset;
+
+    cursor: pointer;
 }
 
 svg {
