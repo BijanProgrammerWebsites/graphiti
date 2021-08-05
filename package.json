@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Just a simple graph visualizer!",
   "scripts": {
-    "dev": "concurrently \"live-server --proxy=/app:http://127.0.0.1:8080\" \"sass --watch styles/scss:styles/css\""
+    "dev": "concurrently \"live-server --proxy=/graphiti:http://127.0.0.1:8080 --open=/graphiti\" \"sass --watch styles/scss:styles/css\""
   },
   "keywords": [
     "grpah",
